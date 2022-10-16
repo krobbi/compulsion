@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "compulsion",
+	"version": "0.0.0-dev",
+	"name": "Compulsion",
+	"description": "Nitty-gritty compulsive fixes for Minecraft.",
+	"authors": [
+		"Krobbizoid"
+	],
+	"contact": {
+		"homepage": "https://github.com/krobbi/compulsion/releases",
+		"sources": "https://github.com/krobbi/compulsion"
+	},
+	"license": "MIT",
+	"icon": "assets/compulsion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.krobbi.compulsion.CompulsionMod"
+		]
+	},
+	"mixins": [
+		"compulsion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.9",
+		"fabric-api": "*",
+		"minecraft": "~1.19",
+		"java": ">=17"
+	},
+	"suggests": {}
+}
