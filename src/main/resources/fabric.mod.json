@@ -13,7 +13,7 @@
 	},
 	"license": "MIT",
 	"icon": "assets/compulsion/icon.png",
-	"environment": "client",
+	"environment": "*",
 	"entrypoints": {},
 	"mixins": [
 		"compulsion.mixins.json"
