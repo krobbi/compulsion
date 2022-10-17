@@ -5,9 +5,10 @@ __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 
 # Contents
 1. [About](#about)
-2. [Features](#features)
-3. [Credits](#credits)
-4. [License](#license)
+2. [Downloads](#downloads)
+3. [Features](#features)
+4. [Credits](#credits)
+5. [License](#license)
 
 # About
 Compulsion is a Minecraft Fabric mod that aims to be updated sporadically with
@@ -19,6 +20,11 @@ and is in the process of implementing its feature set.
 You may use this mod in mod packs without permission.
 
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
+
+# Downloads
+* [Compulsion v1.0.0 for Minecraft Fabric 1.19.x](https://github.com/krobbi/compulsion/releases/download/v1.0.0/compulsion-1.0.0.jar)
+
+For more information, see the [GitHub releases page](https://github.com/krobbi/compulsion/releases).
 
 # Features
 * Display End portal blocks on all sides with the correct height.
