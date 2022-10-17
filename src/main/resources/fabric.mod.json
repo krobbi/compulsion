@@ -14,7 +14,11 @@
 	"license": "MIT",
 	"icon": "assets/compulsion/icon.png",
 	"environment": "*",
-	"entrypoints": {},
+	"entrypoints": {
+		"main": [
+			"io.github.krobbi.compulsion.CompulsionMod"
+		]
+	},
 	"mixins": [
 		"compulsion.mixins.json"
 	],
