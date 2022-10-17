@@ -1,6 +1,6 @@
 # Compulsion
 _Nitty-gritty compulsive fixes for Minecraft._  
-__v0.0.0-dev__ for Minecraft Fabric __1.19.x__  
+__v1.0.0__ for Minecraft Fabric __1.19.x__  
 __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 
 # Contents
@@ -14,14 +14,14 @@ Compulsion is a Minecraft Fabric mod that aims to be updated sporadically with
 minor tweaks and fixes that improve the player's experience in transparent and
 subtle ways. It is the successor to
 [Endfix](https://github.com/krobbi/fabricmc-endfix), my first Minecraft mod,
-and is planned to include its feature set.
+and is in the process of implementing its feature set.
 
 You may use this mod in mod packs without permission.
 
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
 
 # Features
-None yet.
+* Display End portal blocks on all sides with the correct height.
 
 # Credits
 Logo color palette - [Faraway48](https://lospec.com/palette-list/faraway48) by

@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "compulsion",
-	"version": "0.0.0-dev",
+	"version": "1.0.0",
 	"name": "Compulsion",
 	"description": "Nitty-gritty compulsive fixes for Minecraft.",
 	"authors": [
@@ -13,12 +13,8 @@
 	},
 	"license": "MIT",
 	"icon": "assets/compulsion/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"io.github.krobbi.compulsion.CompulsionMod"
-		]
-	},
+	"environment": "client",
+	"entrypoints": {},
 	"mixins": [
 		"compulsion.mixins.json"
 	],
