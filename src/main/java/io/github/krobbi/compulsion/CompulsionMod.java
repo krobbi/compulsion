@@ -11,6 +11,7 @@ public class CompulsionMod implements ModInitializer {
 	
 	@Override
 	public void onInitialize(){
+		LOGGER.debug("Debug messages from Compulsion mod are available");
 		LOGGER.info("Compulsion mod initialized");
 	}
 }
