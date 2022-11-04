@@ -7,6 +7,7 @@ __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 1. [About](#about)
 2. [Downloads](#downloads)
 3. [Features](#features)
+   * [About Data Fixer](#about-data-fixer)
 4. [Credits](#credits)
 5. [License](#license)
 
@@ -31,6 +32,18 @@ For more information, see the [GitHub releases page](https://github.com/krobbi/c
 * Fix the positioning of newly generated End gateways.
 * Fix the positioning of newly generated End spikes.
 * Display End portal blocks on all sides with the correct height.
+* Disable data fixer optimization. (See [About Data Fixer](#about-data-fixer).)
+
+## About Data Fixer
+The data fixer is a component of the game that helps convert the format of
+external data (worlds etc.) when updating to new versions. When the game boots,
+the rules used by the data fixer are optimized. This is quite a heavy process
+that can slow down booting significantly. Depending on your device, this may
+cause up to several minutes of lag after the game starts.
+
+Normally, the data fixer is rarely used, so this optimization step is skipped.
+Because of this, converting worlds may be slower, and you may initially
+experience lag spikes when playing in older worlds.
 
 # Credits
 Logo color palette - [Faraway48](https://lospec.com/palette-list/faraway48) by

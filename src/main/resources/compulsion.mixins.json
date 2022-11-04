@@ -9,7 +9,8 @@
 	],
 	"client": [
 		"client.EndPortalBlockEntityMixin",
-		"client.EndPortalBlockEntityRendererMixin"
+		"client.EndPortalBlockEntityRendererMixin",
+		"client.MainMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
