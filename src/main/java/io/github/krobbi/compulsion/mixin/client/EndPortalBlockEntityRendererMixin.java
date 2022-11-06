@@ -10,16 +10,10 @@ import net.minecraft.client.render.block.entity.EndPortalBlockEntityRenderer;
 
 @Mixin(EndPortalBlockEntityRenderer.class)
 public abstract class EndPortalBlockEntityRendererMixin {
-	private static final String OWNER = "Lnet/minecraft/client/render/block/entity/EndPortalBlockEntityRenderer;";
-	private static final String ENTITY_ARG = "Lnet/minecraft/block/entity/EndPortalBlockEntity;";
-	private static final String MATRIX_ARG = "Lnet/minecraft/util/math/Matrix4f;";
-	private static final String VERTEX_CONSUMER_ARG = "Lnet/minecraft/client/render/VertexConsumer;";
-	private static final String DIRECTION_ARG = "Lnet/minecraft/util/math/Direction;";
-	private static final String OBJECT_ARGS = ENTITY_ARG + MATRIX_ARG + VERTEX_CONSUMER_ARG;
-	private static final String RENDER_SIDE = OWNER + "renderSide(" + OBJECT_ARGS + "FFFFFFFF" + DIRECTION_ARG + ")V";
-	private static final String RENDER_SIDES = "renderSides(" + OBJECT_ARGS + ")V";
-	private static final int Y1_ARG_INDEX = 5;
-	private static final int Y2_ARG_INDEX = 6;
+	private static final String METHOD = "renderSides(Lnet/minecraft/block/entity/EndPortalBlockEntity;Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/client/render/VertexConsumer;)V";
+	private static final String TARGET = "Lnet/minecraft/client/render/block/entity/EndPortalBlockEntityRenderer;renderSide(Lnet/minecraft/block/entity/EndPortalBlockEntity;Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/client/render/VertexConsumer;FFFFFFFFLnet/minecraft/util/math/Direction;)V";
+	private static final int Y1_ARG = 5;
+	private static final int Y2_ARG = 6;
 	
 	@Shadow
 	protected abstract float getTopYOffset();
@@ -27,27 +21,27 @@ public abstract class EndPortalBlockEntityRendererMixin {
 	@Shadow
 	protected abstract float getBottomYOffset();
 	
-	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 0))
+	@ModifyArgs(method = METHOD, at = @At(value = "INVOKE", target = TARGET, ordinal = 0))
 	private void renderSidesSouth(Args args){
-		args.set(Y1_ARG_INDEX, getBottomYOffset());
-		args.set(Y2_ARG_INDEX, getTopYOffset());
+		args.set(Y1_ARG, getBottomYOffset());
+		args.set(Y2_ARG, getTopYOffset());
 	}
 	
-	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 1))
+	@ModifyArgs(method = METHOD, at = @At(value = "INVOKE", target = TARGET, ordinal = 1))
 	private void renderSidesNorth(Args args){
-		args.set(Y1_ARG_INDEX, getTopYOffset());
-		args.set(Y2_ARG_INDEX, getBottomYOffset());
+		args.set(Y1_ARG, getTopYOffset());
+		args.set(Y2_ARG, getBottomYOffset());
 	}
 	
-	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 2))
+	@ModifyArgs(method = METHOD, at = @At(value = "INVOKE", target = TARGET, ordinal = 2))
 	private void renderSidesEast(Args args){
-		args.set(Y1_ARG_INDEX, getTopYOffset());
-		args.set(Y2_ARG_INDEX, getBottomYOffset());
+		args.set(Y1_ARG, getTopYOffset());
+		args.set(Y2_ARG, getBottomYOffset());
 	}
 	
-	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 3))
+	@ModifyArgs(method = METHOD, at = @At(value = "INVOKE", target = TARGET, ordinal = 3))
 	private void renderSidesWest(Args args){
-		args.set(Y1_ARG_INDEX, getBottomYOffset());
-		args.set(Y2_ARG_INDEX, getTopYOffset());
+		args.set(Y1_ARG, getBottomYOffset());
+		args.set(Y2_ARG, getTopYOffset());
 	}
 }
