@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "compulsion",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"name": "Compulsion",
 	"description": "Nitty-gritty compulsive fixes for Minecraft.",
 	"authors": [
