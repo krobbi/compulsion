@@ -9,8 +9,8 @@ import net.minecraft.entity.boss.dragon.EnderDragonFight;
 
 @Mixin(EnderDragonFight.class)
 public abstract class EnderDragonFightMixin {
-	@Redirect(at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/MathHelper;floor(D)I"), method = "generateNewEndGateway()V")
-	private int round(double value){
+	@Redirect(method = "generateNewEndGateway()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/MathHelper;floor(D)I"))
+	private int generateNewEndGateway(double value){
 		CompulsionMod.LOGGER.debug("Fixed rounding error in End gateway positioning");
 		return (int) Math.round(value);
 	}

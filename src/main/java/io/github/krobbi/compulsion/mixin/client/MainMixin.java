@@ -9,7 +9,7 @@ import net.minecraft.client.main.Main;
 
 @Mixin(Main.class)
 public abstract class MainMixin {
-	@ModifyVariable(at = @At("HEAD"), method = "main([Ljava/lang/String;Z)V", ordinal = 0)
+	@ModifyVariable(method = "main([Ljava/lang/String;Z)V", at = @At("HEAD"), ordinal = 0)
 	private static boolean main(boolean optimizeDataFixer){
 		CompulsionMod.LOGGER.debug("Disabled data fixer optimization");
 		return false;

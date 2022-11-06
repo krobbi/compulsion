@@ -27,26 +27,26 @@ public abstract class EndPortalBlockEntityRendererMixin {
 	@Shadow
 	protected abstract float getBottomYOffset();
 	
-	@ModifyArgs(at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 0), method = RENDER_SIDES)
-	private void renderSouthSide(Args args){
+	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 0))
+	private void renderSidesSouth(Args args){
 		args.set(Y1_ARG_INDEX, getBottomYOffset());
 		args.set(Y2_ARG_INDEX, getTopYOffset());
 	}
 	
-	@ModifyArgs(at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 1), method = RENDER_SIDES)
-	private void renderNorthSide(Args args){
+	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 1))
+	private void renderSidesNorth(Args args){
 		args.set(Y1_ARG_INDEX, getTopYOffset());
 		args.set(Y2_ARG_INDEX, getBottomYOffset());
 	}
 	
-	@ModifyArgs(at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 2), method = RENDER_SIDES)
-	private void renderEastSide(Args args){
+	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 2))
+	private void renderSidesEast(Args args){
 		args.set(Y1_ARG_INDEX, getTopYOffset());
 		args.set(Y2_ARG_INDEX, getBottomYOffset());
 	}
 	
-	@ModifyArgs(at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 3), method = RENDER_SIDES)
-	private void renderWestSide(Args args){
+	@ModifyArgs(method = RENDER_SIDES, at = @At(value = "INVOKE", target = RENDER_SIDE, ordinal = 3))
+	private void renderSidesWest(Args args){
 		args.set(Y1_ARG_INDEX, getBottomYOffset());
 		args.set(Y2_ARG_INDEX, getTopYOffset());
 	}

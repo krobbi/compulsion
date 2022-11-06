@@ -10,7 +10,7 @@ import net.minecraft.util.math.Direction;
 
 @Mixin(EndPortalBlockEntity.class)
 public abstract class EndPortalBlockEntityMixin {
-	@Inject(at = @At("RETURN"), method = "shouldDrawSide(Lnet/minecraft/util/math/Direction;)Z", cancellable = true)
+	@Inject(method = "shouldDrawSide(Lnet/minecraft/util/math/Direction;)Z", at = @At("RETURN"), cancellable = true)
 	private void shouldDrawSide(Direction direction, CallbackInfoReturnable<Boolean> info){
 		info.setReturnValue(true);
 	}
