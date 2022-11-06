@@ -9,9 +9,12 @@ public class CompulsionMod implements ModInitializer {
 	public static final String MOD_ID = "compulsion";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	
+	static {
+		LOGGER.debug("Debug messages from Compulsion mod are available");
+	}
+	
 	@Override
 	public void onInitialize(){
-		LOGGER.debug("Debug messages from Compulsion mod are available");
 		LOGGER.info("Compulsion mod initialized");
 	}
 }
