@@ -10,7 +10,8 @@
 	"client": [
 		"client.EndPortalBlockEntityMixin",
 		"client.EndPortalBlockEntityRendererMixin",
-		"client.MainMixin"
+		"client.MainMixin",
+		"client.TelemetrySenderMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

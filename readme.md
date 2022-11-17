@@ -35,6 +35,7 @@ For more information, see the [GitHub releases page](https://github.com/krobbi/c
 * Fix the positioning of newly generated End spikes.
 * Display End portal blocks on all sides with the correct height.
 * Disable data fixer optimization. (See [About Data Fixer](#about-data-fixer).)
+* Disable telemetry.
 
 ## About Data Fixer
 The data fixer is a component of the game that helps convert the format of
