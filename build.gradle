@@ -33,8 +33,8 @@ dependencies {
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 }
 
-// Loom access widener:
 loom {
+	// Access widener. Not part of the mod template.
 	accessWidenerPath = file("src/main/resources/compulsion.accesswidener")
 }
 
