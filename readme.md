@@ -1,6 +1,6 @@
 # Compulsion
 _Nitty-gritty compulsive fixes for Minecraft._  
-__v1.2.1__ for Minecraft Fabric __1.19.x__  
+__v1.3.0__ for Minecraft Fabric __1.19.x__  
 __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 
 # Contents
@@ -18,11 +18,15 @@ subtle ways. It is the successor to
 [Endfix](https://github.com/krobbi/fabricmc-endfix), my first Minecraft mod,
 and contains its feature set.
 
+The mod is dependency free and does not require any other mods, including the
+Fabric API mod.
+
 You may use this mod in mod packs without permission.
 
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
 
 # Downloads
+* [Compulsion v1.3.0 for Minecraft Fabric 1.19.x](https://github.com/krobbi/compulsion/releases/download/v1.3.0/compulsion-1.3.0.jar)
 * [Compulsion v1.2.1 for Minecraft Fabric 1.19.x](https://github.com/krobbi/compulsion/releases/download/v1.2.1/compulsion-1.2.1.jar)
 * [Compulsion v1.2.0 for Minecraft Fabric 1.19.x](https://github.com/krobbi/compulsion/releases/download/v1.2.0/compulsion-1.2.0.jar)
 * [Compulsion v1.1.0 for Minecraft Fabric 1.19.x](https://github.com/krobbi/compulsion/releases/download/v1.1.0/compulsion-1.1.0.jar)
