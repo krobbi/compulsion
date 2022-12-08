@@ -6,6 +6,8 @@ __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 # Contents
 1. [About](#about)
 2. [Downloads](#downloads)
+   * [Fabric 1.19.3 Downloads](#fabric-1193-downloads)
+   * [Fabric 1.19.2 Downloads](#fabric-1192-downloads)
 3. [Features](#features)
    * [About Data Fixer](#about-data-fixer)
 4. [Credits](#credits)
@@ -26,7 +28,10 @@ You may use this mod in mod packs without permission.
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
 
 # Downloads
+## Fabric 1.19.3 Downloads
 * [Compulsion v1.3.1 for Minecraft Fabric 1.19.3](https://github.com/krobbi/compulsion/releases/download/v1.3.1/compulsion-1.3.1.jar)
+
+## Fabric 1.19.2 Downloads
 * [Compulsion v1.3.0 for Minecraft Fabric 1.19.2](https://github.com/krobbi/compulsion/releases/download/v1.3.0/compulsion-1.3.0.jar)
 * [Compulsion v1.2.1 for Minecraft Fabric 1.19.2](https://github.com/krobbi/compulsion/releases/download/v1.2.1/compulsion-1.2.1.jar)
 * [Compulsion v1.2.0 for Minecraft Fabric 1.19.2](https://github.com/krobbi/compulsion/releases/download/v1.2.0/compulsion-1.2.0.jar)
