@@ -17,13 +17,13 @@ public abstract class EndPortalBlockEntityRendererMixin {
 	/**
 	 * The representation of the {@code renderSides} method to mix into.
 	 */
-	private static final String METHOD = "renderSides(Lnet/minecraft/block/entity/EndPortalBlockEntity;Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/client/render/VertexConsumer;)V";
+	private static final String METHOD = "renderSides(Lnet/minecraft/block/entity/EndPortalBlockEntity;Lorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumer;)V";
 	
 	/**
 	 * The representation of the {@code renderSide} method to modify the
 	 * arguments of.
 	 */
-	private static final String TARGET = "Lnet/minecraft/client/render/block/entity/EndPortalBlockEntityRenderer;renderSide(Lnet/minecraft/block/entity/EndPortalBlockEntity;Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/client/render/VertexConsumer;FFFFFFFFLnet/minecraft/util/math/Direction;)V";
+	private static final String TARGET = "Lnet/minecraft/client/render/block/entity/EndPortalBlockEntityRenderer;renderSide(Lnet/minecraft/block/entity/EndPortalBlockEntity;Lorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumer;FFFFFFFFLnet/minecraft/util/math/Direction;)V";
 	
 	/**
 	 * The position of the {@code renderSide} method's {@code y1} argument.
