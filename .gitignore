@@ -19,6 +19,12 @@ bin/*
 *.sublime-workspace
 *.suo
 
+# Java:
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
 # Build:
 .gradle/*
 build/*
@@ -27,5 +33,5 @@ classes/*
 remappedSrc/*
 run/*
 
-# Ignore
+# Ignore:
 ignore/*
