@@ -19,7 +19,6 @@
 			"io.github.krobbi.compulsion.CompulsionMod"
 		]
 	},
-	"accessWidener": "compulsion.accesswidener",
 	"mixins": [
 		"compulsion.mixins.json"
 	],
