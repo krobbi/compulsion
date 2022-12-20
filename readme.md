@@ -1,6 +1,6 @@
 # Compulsion
 _Nitty-gritty compulsive fixes for Minecraft._  
-__v1.3.1__ for Minecraft Fabric __1.19.3__  
+__v1.3.2__ for Minecraft Fabric __1.19.3__  
 __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 
 # Contents
@@ -29,6 +29,7 @@ NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
 
 # Downloads
 ## Fabric 1.19.3 Downloads
+* [Compulsion v1.3.2 for Minecraft Fabric 1.19.3](https://github.com/krobbi/compulsion/releases/download/v1.3.2/compulsion-1.3.2.jar)
 * [Compulsion v1.3.1 for Minecraft Fabric 1.19.3](https://github.com/krobbi/compulsion/releases/download/v1.3.1/compulsion-1.3.1.jar)
 
 ## Fabric 1.19.2 Downloads
