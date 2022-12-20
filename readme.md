@@ -1,6 +1,6 @@
 # Compulsion
 _Nitty-gritty compulsive fixes for Minecraft._  
-__v1.3.2__ for Minecraft Fabric __1.19.3__  
+Version `1.3.2` for Minecraft Fabric `1.19.3`.  
 __Copyright &copy; 2022 Chris Roberts__ (Krobbizoid)
 
 # Contents
